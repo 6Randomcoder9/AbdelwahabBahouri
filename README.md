@@ -1,9 +1,3 @@
-# Parth Sharma - Personal Portfolio
-
-A modern, responsive portfolio website built with React, TypeScript, Tailwind CSS, and Framer Motion. This project was created for practice purposes to showcase my front-end development skills.
-
-![Portfolio Preview](/public/Girhubprevieww.png)
-
 # Abdelwahab Bahouri - Personal Portfolio
 
 Personal portfolio showcasing data analytics, business intelligence, and automation projects.
