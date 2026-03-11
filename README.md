@@ -4,86 +4,65 @@ A modern, responsive portfolio website built with React, TypeScript, Tailwind CS
 
 ![Portfolio Preview](/public/Girhubprevieww.png)
 
-## Live Demo
+# Abdelwahab Bahouri - Personal Portfolio
 
-[View Live Demo](https://parth-portfolio-demo.vercel.app/)
+Personal portfolio showcasing data analytics, business intelligence, and automation projects.
 
-## Features
+## Live Portfolio
 
-- Modern, responsive design for all device sizes
-- Custom animated cursor with hover effects
-- Smooth scroll animations using Framer Motion
-- Purple-themed UI with elegant glow effects
-- Interactive project showcase with technology details
-- Contact section with functional form
-- Dark/light mode toggle
+- GitHub Pages: https://6randomcoder9.github.io/AbdelwahabBahouri/
+- Repository: https://github.com/6Randomcoder9/AbdelwahabBahouri
 
-## Technologies Used
+## About This Portfolio
 
-- **React.js** - Frontend framework
-- **TypeScript** - Type safety
-- **Tailwind CSS** - Styling
-- **Framer Motion** - Animations
-- **Vite** - Build tool
-- **Shadcn UI** - Component library
-- **React Router** - Navigation
-- **React Query** - Data fetching
+This portfolio highlights practical BI and data projects, including:
 
-## Running Locally
+- BI Dashboard for Sales Analysis (2026)
+- BestLAB - Data Analyst & Business Analyst (2025)
+- BIAT - Data Analyst & Automation (2025)
+- HR Analytics and Decision Dashboard (2025)
+- Msign - Data Analyst & Business Analyst (2024)
+- BI Platform for Inventory Management (2024)
+- Backoffice E-Commerce Platform (2024)
+
+## Tech Stack
+
+- React 18
+- TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion
+- React Router
+- shadcn/ui
+
+## Run Locally
 
 ```bash
-# Clone the repository
-git clone https://github.com/ksparth12/Portfolio-Demo.git
-
-# Navigate to the project directory
-cd Portfolio-Demo
-
-# Install dependencies
+git clone https://github.com/6Randomcoder9/AbdelwahabBahouri.git
+cd AbdelwahabBahouri
 npm install
-
-# Start the development server
 npm run dev
 ```
 
-## Build for Production
+## Build
 
 ```bash
-# Create a production build
 npm run build
-
-# Preview the production build
 npm run preview
 ```
 
-## Project Structure
+## Deployment
 
-```
-Portfolio/
-├── public/                # Static assets
-│   ├── local-uploads/     # Project images
-│   └── social-icons/      # Social media icons
-├── src/                   # Source code
-│   ├── components/        # React components
-│   │   ├── ui/            # UI components
+This repository is configured for automatic GitHub Pages deployment using GitHub Actions.
+
+- Workflow file: `.github/workflows/deploy-gh-pages.yml`
+- Deploy trigger: every push to `main`
+- Publish output: `dist`
+
+If the live URL does not appear immediately, wait for the Actions workflow to finish and confirm GitHub Pages is enabled in repository settings.
+
+## Contact
+
+- GitHub: https://github.com/6Randomcoder9
+- LinkedIn: https://www.linkedin.com/in/abdelwahab-bahouri
 │   │   ├── AboutSection.tsx
-│   │   ├── ContactSection.tsx
-│   │   ├── HeroSection.tsx
-│   │   ├── ProjectsSection.tsx
-│   │   └── ...
-│   ├── pages/             # Page components
-│   ├── App.tsx            # Main app component
-│   └── main.tsx           # Entry point
-└── ...config files
-```
-
-## Contact Me
-
-Feel free to reach out to me through any of these channels:
-
-- **Email**: [ksparth12@gmail.com](mailto:ksparth12@gmail.com)
-- **LinkedIn**: [ksparth128](https://www.linkedin.com/in/ksparth128)
-- **GitHub**: [ksparth12](https://github.com/ksparth12)
-
-## License
-
-MIT
