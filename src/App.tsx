@@ -13,6 +13,7 @@ import './App.css';
 import CustomCursor from './components/CustomCursor';
 
 const queryClient = new QueryClient();
+const routerBase = import.meta.env.BASE_URL;
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -20,7 +21,7 @@ const App = () => (
       <div className="w-full overflow-x-hidden">
         <Toaster />
         <Sonner />
-        <Router>
+        <Router basename={routerBase}>
           <CustomCursor />
           <Routes>
             <Route path="/" element={<Index />} />
