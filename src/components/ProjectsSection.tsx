@@ -154,7 +154,7 @@ const ProjectsSection = () => {
   return (
     <section id="projects" className="relative bg-black">
       {/* Section Header - Fixed */}
-      <div className="sticky top-0 z-40 bg-black/95 backdrop-blur-md border-b border-blue-500/20">
+      <div className="hidden md:block md:sticky md:top-0 z-40 bg-black/95 backdrop-blur-md border-b border-blue-500/20">
         <div className="container mx-auto px-6 py-1.5">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
@@ -171,12 +171,11 @@ const ProjectsSection = () => {
       </div>
 
       {/* Scroll Snap Container */}
-      <div className="snap-y snap-mandatory overflow-y-scroll scrollbar-hide -mt-32" style={{ height: 'calc(100vh - 60px)' }}>
+      <div className="snap-y snap-mandatory overflow-y-scroll scrollbar-hide h-screen md:h-[calc(100vh-60px)] md:-mt-32">
         {projects.map((project, index) => (
           <div
             key={project.title}
-            className="snap-start flex items-center justify-center relative pt-32"
-            style={{ height: 'calc(100vh - 60px)' }}
+            className="snap-start flex items-center justify-center relative pt-20 md:pt-32 h-screen md:h-[calc(100vh-60px)]"
           >
             {/* Background Gradient */}
             <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-5`} />
