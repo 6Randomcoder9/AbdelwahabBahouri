@@ -4,12 +4,11 @@ import { Github, Linkedin, Mail, ArrowDown, Code, Star, Terminal, Zap } from 'lu
 import { Button } from '@/components/ui/button';
 import TypewriterEffect from './TypewriterEffect';
 import { ChevronDown } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const assetUrl = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
-  const navigate = useNavigate();
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -19,20 +18,6 @@ const HeroSection = () => {
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
-
-  const scrollToSection = (id: string) => {
-    if (id === 'projects') {
-      navigate('/projects');
-      return;
-    }
-
-    if (id === 'contact') {
-      navigate('/contact');
-      return;
-    }
-
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-  };
 
   const words = [
     { text: "Build." },
@@ -179,19 +164,19 @@ const HeroSection = () => {
               className="flex flex-col sm:flex-row gap-4 mb-8"
             >
               <Button
-                onClick={() => scrollToSection('projects')}
+                asChild
                 className="bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white px-8 py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-blue-500/25"
                 size="lg"
               >
-                View Projects
+                <Link to="/projects">View Projects</Link>
               </Button>
               <Button
-                onClick={() => scrollToSection('contact')}
+                asChild
                 variant="outline"
                 className="border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white px-8 py-3 rounded-full transition-all duration-300"
                 size="lg"
               >
-                Contact Me
+                <Link to="/contact">Contact Me</Link>
               </Button>
             </motion.div>
 
