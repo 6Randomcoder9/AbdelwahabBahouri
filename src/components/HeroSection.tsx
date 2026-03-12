@@ -4,10 +4,12 @@ import { Github, Linkedin, Mail, ArrowDown, Code, Star, Terminal, Zap } from 'lu
 import { Button } from '@/components/ui/button';
 import TypewriterEffect from './TypewriterEffect';
 import { ChevronDown } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const HeroSection = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const assetUrl = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -19,6 +21,16 @@ const HeroSection = () => {
   }, []);
 
   const scrollToSection = (id: string) => {
+    if (id === 'projects') {
+      navigate('/projects');
+      return;
+    }
+
+    if (id === 'contact') {
+      navigate('/contact');
+      return;
+    }
+
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
 
