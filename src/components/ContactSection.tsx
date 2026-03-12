@@ -10,31 +10,32 @@ const ContactSection = () => {
     triggerOnce: true,
     threshold: 0.1
   });
+  const assetUrl = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
 
   const contactMethods = [
     {
-      icon: "/social-icons/email-contact.svg",
+      icon: assetUrl("/social-icons/email-contact.svg"),
       label: "Email",
       value: "abdelwahab.bahouri@esprit.tn",
       href: "mailto:abdelwahab.bahouri@esprit.tn",
       gradient: "from-blue-600 to-blue-800"
     },
     {
-      icon: "/social-icons/linkedin-contact.svg",
+      icon: assetUrl("/social-icons/linkedin-contact.svg"),
       label: "LinkedIn",
       value: "abdelwahab-bahouri-005386246",
       href: "https://www.linkedin.com/in/abdelwahab-bahouri-005386246/",
       gradient: "from-blue-500 to-blue-700"
     },
     {
-      icon: "/social-icons/github-contact.svg",
+      icon: assetUrl("/social-icons/github-contact.svg"),
       label: "GitHub",
       value: "6Randomcoder9",
       href: "https://github.com/6Randomcoder9",
       gradient: "from-blue-700 to-blue-900"
     },
     {
-      icon: "/social-icons/location-contact.svg",
+      icon: assetUrl("/social-icons/location-contact.svg"),
       label: "Location",
       value: "Tunisia",
       href: "#",
@@ -106,7 +107,7 @@ const ContactSection = () => {
                     transition={{ duration: 0.3 }}
                   >
                     <img
-                      src="/me2.jpg"
+                      src={assetUrl('/me2.jpg')}
                       alt="Abdelwahab Bahouri - Professional"
                       className="w-full h-full object-cover"
                     />
@@ -162,7 +163,7 @@ const ContactSection = () => {
                   className="bg-gradient-to-r from-blue-700 to-blue-800 hover:from-blue-800 hover:to-blue-900 text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:shadow-blue-600/25 transition-all duration-300"
                   onClick={() => window.open('mailto:abdelwahab.bahouri@esprit.tn', '_blank')}
                 >
-                  <img src="/social-icons/email-contact.svg" alt="Email" className="w-5 h-5 mr-2" />
+                  <img src={assetUrl('/social-icons/email-contact.svg')} alt="Email" className="w-5 h-5 mr-2" />
                   Get In Touch
                 </Button>
               </motion.div>
@@ -202,7 +203,7 @@ const ContactSection = () => {
                             className="text-blue-400"
                             whileHover={{ x: 5 }}
                           >
-                            <img src="/social-icons/link-contact.svg" alt="Open Link" className="w-5 h-5" />
+                            <img src={assetUrl('/social-icons/link-contact.svg')} alt="Open Link" className="w-5 h-5" />
                           </motion.div>
                         )}
                       </div>

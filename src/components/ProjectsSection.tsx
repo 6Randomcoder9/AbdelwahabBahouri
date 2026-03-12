@@ -5,6 +5,7 @@ import ImageCarousel from './ImageCarousel';
 
 const ProjectsSection = () => {
   const [fullscreenProject, setFullscreenProject] = useState<number | null>(null);
+  const assetUrl = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
   const projects = [
     {
       title: "BI Dashboard for Sales Analysis",
@@ -145,7 +146,10 @@ const ProjectsSection = () => {
       gradient: "from-blue-600 to-pink-600",
       accentColor: "bg-pink-500"
     }
-  ];
+  ].map((project) => ({
+    ...project,
+    images: project.images.map(assetUrl),
+  }));
 
   return (
     <section id="projects" className="relative bg-black">

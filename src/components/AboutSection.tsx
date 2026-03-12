@@ -8,6 +8,7 @@ const AboutSection = () => {
     triggerOnce: true,
     threshold: 0.1
   });
+  const assetUrl = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -121,7 +122,7 @@ const AboutSection = () => {
                     }}
                   >
                     <img
-                      src="/local-uploads/1cf7f11d-9199-4e9f-922c-a2b644007ad7.png"
+                      src={assetUrl('/local-uploads/1cf7f11d-9199-4e9f-922c-a2b644007ad7.png')}
                       alt="Developer workspace"
                       className="w-full h-full object-cover"
                     />

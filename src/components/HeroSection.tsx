@@ -7,6 +7,7 @@ import { ChevronDown } from 'lucide-react';
 
 const HeroSection = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const assetUrl = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -53,25 +54,25 @@ const HeroSection = () => {
   const socialLinks = [
     {
       name: "GitHub",
-      icon: "/social-icons/github-contact.svg",
+      icon: assetUrl("/social-icons/github-contact.svg"),
       url: "https://github.com/6Randomcoder9",
       color: "hover:text-white hover:bg-blue-800"
     },
     {
       name: "LinkedIn",
-      icon: "/social-icons/linkedin-contact.svg",
+      icon: assetUrl("/social-icons/linkedin-contact.svg"),
       url: "https://www.linkedin.com/in/abdelwahab-bahouri-005386246/",
       color: "hover:text-white hover:bg-blue-800"
     },
     {
       name: "Email",
-      icon: "/social-icons/email-contact.svg",
+      icon: assetUrl("/social-icons/email-contact.svg"),
       url: "mailto:abdelwahab.bahouri@esprit.tn",
       color: "hover:text-white hover:bg-blue-800"
     },
     {
       name: "Location",
-      icon: "/social-icons/location-contact.svg",
+      icon: assetUrl("/social-icons/location-contact.svg"),
       url: "#",
       color: "hover:text-white hover:bg-blue-800"
     }
@@ -233,7 +234,7 @@ const HeroSection = () => {
                     transition={{ duration: 0.3 }}
                   >
                     <img 
-                      src="/me1.png" 
+                      src={assetUrl('/me1.png')} 
                       alt="Abdelwahab Bahouri" 
                       className="w-full h-full object-cover"
                     />
