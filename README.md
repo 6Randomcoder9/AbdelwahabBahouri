@@ -53,10 +53,13 @@ This repository is configured for automatic GitHub Pages deployment using GitHub
 - Deploy trigger: every push to `main`
 - Publish output: `dist`
 
-If the live URL does not appear immediately, wait for the Actions workflow to finish and confirm GitHub Pages is enabled in repository settings.
+### Enabling GitHub Pages
+
+To activate the live site, go to **Settings → Pages** in this repository and set the **Source** to **GitHub Actions**. After that, every push to `main` will automatically build and deploy the portfolio to:
+
+https://6randomcoder9.github.io/AbdelwahabBahouri/
 
 ## Contact
 
 - GitHub: https://github.com/6Randomcoder9
 - LinkedIn: https://www.linkedin.com/in/abdelwahab-bahouri
-│   │   ├── AboutSection.tsx
