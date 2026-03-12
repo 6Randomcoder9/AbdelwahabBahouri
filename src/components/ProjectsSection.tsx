@@ -9,7 +9,7 @@ const ProjectsSection = () => {
   const projects = [
     {
       title: "BI Dashboard for Sales Analysis",
-      description: "2026 | Tunis, Tunisia. Analyzed sales trends and growth opportunities, designed an optimized data model, and built interactive Power BI dashboards to track margins, revenue, and overall performance.",
+      description: "2026 | Tunis, Tunisia. Goal: provide leadership with a clear sales-performance view by unifying revenue, margin, and growth KPIs in one interactive Power BI decision dashboard.",
       images: [
         "/local-uploads/sales-1.png",
         "/local-uploads/sales-2.png",
@@ -27,7 +27,7 @@ const ProjectsSection = () => {
     },
     {
       title: "BestLAB - Data Analyst & Business Analyst",
-      description: "Oct-Dec 2025 | Ariana, Tunisia. Contributed to Data Warehouse and Data Lake integration, supported ETL cleaning/transformation/loading into SQL Server, improved Power BI dashboards, and performed pipeline data quality checks in Agile delivery.",
+      description: "Oct-Dec 2025 | Ariana, Tunisia. Goal: improve data reliability and analytics speed by integrating Data Warehouse and Data Lake flows, strengthening ETL quality, and delivering cleaner Power BI insights for business teams.",
       images: [
         "/local-uploads/bestlab-1.png",
         "/local-uploads/bestlab-2.png"
@@ -47,7 +47,7 @@ const ProjectsSection = () => {
     },
     {
       title: "BIAT - Data Analyst & Automation",
-      description: "Feb-Jul 2025 | Tunis, Tunisia. Automated HR and financial reporting with UiPath and Selenium, built Python ETL pipelines, delivered unsupervised workforce segmentation, NLP email classification, and real-time Power BI KPI dashboards.",
+      description: "Feb-Jul 2025 | Tunis, Tunisia. Goal: reduce manual operational work and accelerate HR/finance reporting through automation, ML-driven analysis, and real-time KPI tracking in Power BI.",
       images: [
         "/local-uploads/biat-1.png",
         "/local-uploads/biat-2.png",
@@ -72,7 +72,7 @@ const ProjectsSection = () => {
     },
     {
       title: "HR Analytics and Decision Dashboard",
-      description: "2025 | Saudi Arabia. Analyzed HR trends for movements, leave, and performance, designed Python ETL integration and cleansing across systems, and delivered decision-ready Power BI dashboards for HR teams.",
+      description: "2025 | Saudi Arabia. Goal: give HR decision-makers a single trusted view of workforce trends (movement, leave, performance) through integrated ETL pipelines and executive-ready dashboards.",
       images: [
         "/local-uploads/hrdash-1.png",
         "/local-uploads/hrdash-2.png",
@@ -90,7 +90,7 @@ const ProjectsSection = () => {
     },
     {
       title: "Msign - Data Analyst & Business Analyst",
-      description: "Jun-Aug 2024 | Mahdia, Tunisia. Converted business requirements into reporting solutions, designed KPIs and analytical models, and delivered an HR app integrated with Talend ETL pipelines and Power BI dashboards.",
+      description: "Jun-Aug 2024 | Mahdia, Tunisia. Goal: transform HR business requirements into measurable outcomes by defining KPIs, structuring analytics models, and connecting HR workflows to BI reporting.",
       images: [
         "/local-uploads/msign-1.png",
         "/local-uploads/msign-2.png",
@@ -110,7 +110,7 @@ const ProjectsSection = () => {
     },
     {
       title: "BI Platform for Inventory Management",
-      description: "2024 | Tunis, Tunisia. Defined supply chain KPIs, designed a data warehouse, implemented Talend ETL pipelines, and built Power BI dashboards to monitor sales, inventory, and logistics performance.",
+      description: "2024 | Tunis, Tunisia. Goal: optimize stock and supply-chain decisions by centralizing inventory, sales, and logistics data into a BI platform with actionable KPI dashboards.",
       images: [
         "/local-uploads/sales-dashboard-1.png",
         "/local-uploads/sales-dashboard-2.png"
@@ -127,7 +127,7 @@ const ProjectsSection = () => {
     },
     {
       title: "Backoffice E-Commerce Platform",
-      description: "2024 | Tunisia. Comprehensive admin platform for products, coupons, authentication, and operations management with analytics-driven monitoring.",
+      description: "2024 | Tunisia. Goal: streamline e-commerce operations with a unified backoffice for catalog, promotions, authentication, and operational monitoring to support faster business execution.",
       images: [
         "/local-uploads/backoffice-1.png",
         "/local-uploads/backoffice-2.png",
