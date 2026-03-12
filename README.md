@@ -47,17 +47,20 @@ npm run preview
 
 ## Deployment
 
-This repository is configured for automatic GitHub Pages deployment using GitHub Actions.
+The workflow (`.github/workflows/deploy-gh-pages.yml`) builds the project and pushes the output to the `gh-pages` branch automatically on every push to `main`.
 
-- Workflow file: `.github/workflows/deploy-gh-pages.yml`
-- Deploy trigger: every push to `main`
-- Publish output: `dist`
+### One-time setup (repository owner only)
 
-### Enabling GitHub Pages
+1. Merge this PR — the workflow will create the `gh-pages` branch with the built site.
+2. Go to **[Settings → Pages](https://github.com/6Randomcoder9/AbdelwahabBahouri/settings/pages)**.
+3. Under **Build and deployment → Source**, choose **Deploy from a branch**.
+4. Set **Branch** to `gh-pages` and folder to `/ (root)`, then click **Save**.
 
-To activate the live site, go to **Settings → Pages** in this repository and set the **Source** to **GitHub Actions**. After that, every push to `main` will automatically build and deploy the portfolio to:
+The live site will be available at:
 
-https://6randomcoder9.github.io/AbdelwahabBahouri/
+**https://6randomcoder9.github.io/AbdelwahabBahouri/**
+
+Every subsequent push to `main` redeploys automatically — no further manual steps needed.
 
 ## Contact
 
