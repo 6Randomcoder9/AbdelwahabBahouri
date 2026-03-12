@@ -171,11 +171,11 @@ const ProjectsSection = () => {
       </div>
 
       {/* Scroll Snap Container */}
-      <div className="snap-y snap-mandatory overflow-y-scroll scrollbar-hide h-screen md:h-[calc(100vh-60px)] md:-mt-32">
+      <div className="md:snap-y md:snap-mandatory md:overflow-y-scroll md:scrollbar-hide md:h-[calc(100vh-60px)] md:-mt-32">
         {projects.map((project, index) => (
           <div
             key={project.title}
-            className="snap-start flex items-center justify-center relative pt-20 md:pt-32 h-screen md:h-[calc(100vh-60px)]"
+            className="md:snap-start flex items-center justify-center relative pt-20 md:pt-32 md:h-[calc(100vh-60px)]"
           >
             {/* Background Gradient */}
             <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-5`} />
