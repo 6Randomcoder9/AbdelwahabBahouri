@@ -13,7 +13,7 @@ import './App.css';
 import CustomCursor from './components/CustomCursor';
 
 const queryClient = new QueryClient();
-const routerBase = import.meta.env.BASE_URL;
+const routerBase = import.meta.env.BASE_URL.replace(/\/$/, "") || "/";
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
