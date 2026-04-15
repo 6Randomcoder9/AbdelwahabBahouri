@@ -29,8 +29,10 @@ const ProjectsSection = () => {
       title: "BestLAB - Data Analyst & Business Analyst",
       description: "Oct-Dec 2025 | Ariana, Tunisia. Goal: improve data reliability and analytics speed by integrating Data Warehouse and Data Lake flows, strengthening ETL quality, and delivering cleaner Power BI insights for business teams.",
       images: [
-        "/local-uploads/bestlab-1.png",
-        "/local-uploads/bestlab-2.png"
+        "/screenSoussa/1.png",
+        "/screenSoussa/2.png",
+        "/screenSoussa/3.png",
+        "/screenSoussa/4.png"
       ],
       tech: [
         { name: "Power BI", icon: Code },
